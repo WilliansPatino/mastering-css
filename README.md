@@ -6,13 +6,14 @@ Aprende CSS3, Maquetación web, Responsive Web Design, SASS, LESS, Flexbox, CSS 
 
 ### Dia 1: 22.10.2020,		
 * HTML5: Introducción 
+	- Creación de una página web simple.
 * Primeros pasos con CSS
-* Selectores, Fuentes, colores
-  * Herramientas para trabajar con CSS3 (Disponible para Windows)
+- Selectores, Fuentes, colores
+  - Herramientas para trabajar con CSS3 (Disponible para Windows)
     - https://picpick.app/en/
 
-* Fuentes personalizadas en CSS
-  * Descargar fonts de Google
+- Fuentes personalizadas en CSS
+  - Descargar fonts de Google
     - https://fonts.google.com/
     ```
     $ mkdir proyecto/fonts
@@ -32,7 +33,7 @@ Aprende CSS3, Maquetación web, Responsive Web Design, SASS, LESS, Flexbox, CSS 
   - Usar imagenes de fondos y patrones
 
 ## Dia 2: 23.10.2020
-* Modelo de cajas y posicionamiento de elementos
+### Modelo de cajas y posicionamiento de elementos
   - Margenes, padding, bordes
   	> Importante: Asignar el tamaño apropiado de la caja padre
   - Posicionamiento de caja.
@@ -56,7 +57,7 @@ Aprende CSS3, Maquetación web, Responsive Web Design, SASS, LESS, Flexbox, CSS 
 * Transicciones
 * Animaciones
 
-* Proyecto Web Completo: HTML5 y CSS3
+### Proyecto Web Completo: HTML5 y CSS3
 	> Maquetación completa
   - Maquetación de la cabecera
   	- Herramienta recomendada por el profesor:
@@ -68,7 +69,7 @@ Aprende CSS3, Maquetación web, Responsive Web Design, SASS, LESS, Flexbox, CSS 
 
 ## 25.10.2020, Dia 4: 
 
-* Proyecto Web Completo: Continuación de la maquetación 
+### Proyecto Web Completo HTML5 & CCS3: Continuación de la maquetación 
 	- Secciones/Artículos: 
 		- contenido, stickers, iconos 
 		- Uso de la fuente 'Web simbols'
@@ -79,7 +80,7 @@ Aprende CSS3, Maquetación web, Responsive Web Design, SASS, LESS, Flexbox, CSS 
 	- Culminación del proyecto: Footer
 
 
-* Dia 1: Introducción HTML: Ejemplo de creación de una página web.
+
 
 
 ### Sección 16:  Introducción al Responsive Web Design
