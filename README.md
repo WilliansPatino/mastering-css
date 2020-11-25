@@ -53,7 +53,7 @@ Aprende CSS3, Maquetación web, Responsive Web Design, SASS, LESS, Flexbox, CSS 
   	    > Ideal: Redes sociales / Enlace rápidos
 
 ## Dia 3: 24.10.2020
-
+### Continuación 
 * Pseudoclases en CSS
 * Transicciones
 * Animaciones
