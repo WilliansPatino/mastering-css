@@ -59,7 +59,7 @@ Aprende CSS3, Maquetación web, Responsive Web Design, SASS, LESS, Flexbox, CSS 
 * Animaciones
 
 ### Proyecto Web Completo: HTML5 y CSS3
-	- Maquetación Web
+- Maquetación Web
     - Maquetación de la cabecera
   	- Herramienta recomendada por el profesor:
   	  - Extension firefox: 'Web Developer' 
@@ -71,7 +71,7 @@ Aprende CSS3, Maquetación web, Responsive Web Design, SASS, LESS, Flexbox, CSS 
 ## 25.10.2020, Dia 4: 
 
 ### Proyecto Web Completo HTML5 & CCS3: Continuación de la maquetación 
-	- Secciones/Artículos: 
+- Secciones/Artículos: 
 		- contenido, stickers, iconos 
 		- Uso de la fuente 'Web simbols'
 		  - https://www.fontsquirrel.com/
