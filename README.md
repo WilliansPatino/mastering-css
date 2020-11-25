@@ -34,13 +34,14 @@ Aprende CSS3, Maquetación web, Responsive Web Design, SASS, LESS, Flexbox, CSS 
 
 ## Dia 2: 23.10.2020
 ### Modelo de cajas y posicionamiento de elementos
-  - Margenes, padding, bordes
+
+- Margenes, padding, bordes
   	> Importante: Asignar el tamaño apropiado de la caja padre
-  - Posicionamiento de caja.
+- Posicionamiento de caja.
   	- usando; div, class y section
   	  > Importante: float: left | display: block
   	- Ventaja del uso de 'clearfix'
-  - Acomodar cajas en un bloque
+- Acomodar cajas en un bloque
   	- Agrupar un determinada cantidad de cajas por filas
 * Ejercicio #1: HTML + CSS
   - Maquetar una página con cabecera, menu y contenedor de cajas
