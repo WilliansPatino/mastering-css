@@ -65,3 +65,18 @@ Aprende CSS3, Maquetación web, Responsive Web Design, SASS, LESS, Flexbox, CSS 
   	  	> ( Acceso: Miscelaneous/Display Ruler )
   	- Barra de navegación: menú, submenues
   	- Barra lateral;  contenido, Formularios
+
+## 25.10.2020, Dia 4: 
+
+* Proyecto Web Completo: Continuación de la maquetación 
+	- Secciones/Artículos: 
+		- contenido, stickers, iconos 
+		- Uso de la fuenta 'Web simbols'
+		  - https://www.fontsquirrel.com/
+		    - https://www.fontsquirrel.com/fonts/web-symbols?q%5Bterm%5D=symbols&q%5Bsearch_check%5D=Y
+		    > Útil: cada letra tiene un logotipo o simbolo (svg) sin perder calidad.
+		    > Buscar en Glyphs: letra que asocia el icono.
+	- Culminación del proyecto: Footer
+
+
+* Dia 1: Introducción HTML: Ejemplo de creación de una página web.

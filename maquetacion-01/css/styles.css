@@ -9,6 +9,19 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'fajala';
+    src: url('../css/fonts/FjallaOne-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'websymbol';
+    src: url('../css/fonts/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg'),
+         url('../css/fonts/websymbols-regular-webfont.eot') format('embedded-opentype'),
+         url('../css/fonts/websymbols-regular-webfont.woff') format('woff'),
+         url('../css/fonts/websymbols-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 /* estilos generales */
 * {
@@ -20,21 +33,29 @@ body {
     background-image: url('../img/paven.png')
 }
 
-#clearfix {
+.websymbol {
+    font-family: websymbol;
+    float: left;
+    /* margin: -2px; */
+    color: rgb(75, 124, 6);
+}
+
+.clearfix {
     float: none;
     clear: both;
 }
 
 a {
-    color: #41a911;
+    color: #71e23d;
     text-decoration: none;
 }
 a:hover {
     color: #49bb1c;
-    text-shadow: 0px 0px 1px #49bb1c, 0px 0px 1px #71b053;
+    text-shadow: 0px 0px 1px #49bb1c;
+    /* , 0px 0px 1px #71b053; */
 }
 a:visited {
-    color: rgb(26, 77, 26);
+    color: #71e23d;
 }
 
 /* cabecera */
@@ -153,11 +174,12 @@ a:visited {
     width: 1250px;
     min-width: 1100px; /* determina el ancho del scroll */
     margin: 0px auto;
+    font-family: Helvetica, sans-serif, Arial;
 }
 
 /* barra lateral */
 #aside, #frase {
-    clear: both;
+    /* clear: both; */
     width: 200px;
     border: 1px solid #ccc;
     box-shadow: 0px 2px 2px #ccc;
@@ -281,12 +303,92 @@ btn-login:active {
 }
 #frase {
     /* padding: 10px; */
+    /* clear: both; */
     font-size: 14px;
     font-family: sans-serif;
+    width: 180px;
+    padding: 10px;
 }
 .red-title {
     color: #9b2422 !important;
 }
 .blue-title {
     color: #0c73f2 !important;
+}
+.beige-title {
+    color: #f1c355 !important;
+}
+
+/* secciones: contenido central de los artículos */
+#sections {
+
+    float: right;
+    width: 75%;
+    font-family: sans-serif, Helvetica, Arial;
+    margin-right:20px;
+}
+#sections .titulo {
+    font-size: 25px;
+    font-family: 'fajala';
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    margin-top: -20px;
+}
+/*--- crear marco (encajar secciones) */
+#sections section {
+    margin-top: 40px;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #CCC;
+    box-shadow: 0px 0px 4px #c9c9c9;
+    color: #333333;
+    font-size: 16px;
+    overflow: hidden; /* Lo que sale de la seccion, se oculta */
+}
+
+/* diseño para los articulos */
+#sections .article {
+    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#sections .date {
+    font-size: 14px;
+    color: gray;
+}
+#sections .stickerOne,
+.stickerTwo {
+    position: absolute;
+    margin-left: 100px;
+    margin-top: -39px;
+    z-index: 0;
+}
+#sections .stickerTwo {
+    margin-left: 750px;
+}
+
+/* pie de pagina */
+#history {
+    float: right;
+    margin: 25px;
+    font-family: Helvetica, sans-serif, Arial;
+    margin-right: 20px;
+}
+
+#footer {
+    width: 100%;
+    margin: 0px auto;
+    text-align: center;
+    margin-top: 35px;
+    background-color: #333333;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    font-size: 15px;
+    font-family: 'fajala';
+    color: white;
+    line-height: 20px;
 }
