@@ -5,7 +5,7 @@ Aprende CSS3, Maquetación web, Responsive Web Design, SASS, LESS, Flexbox, CSS 
 ## Bitácora del curso
 
 ### Dia 1: 22.10.2020,		
- HTML5: Introducción 
+### HTML5: Introducción 
 	- Creación de una página web simple.
 * Primeros pasos con CSS
 - Selectores, Fuentes, colores
