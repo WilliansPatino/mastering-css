@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cajas en CSS</title>
+    <link rel="stylesheet" href="styles.css" class="">
+</head>
+<body>
+<h1>Cajas en CSS</h1> <hr>
+<!-- div, section, class -->
+<h2 class="">Cajas sin posicionamiento ni flotado</h2>
+        <div id="caja1">
+        <p class="">
+        caja1
+        </p>
+    </div>
+    <div id="caja2">
+        <p class="">
+        caja2
+        </p>
+    </div>
+
+    <h2 class="">Cajas posicionadas y con flotado | Tamaño de caja fijo</h2>
+     <!-- elementos flotados -->
+    <section class="cajas">
+        <p class="">section | Width: 800px</p>
+         
+        <div class="caja">
+            <p class="">
+            caja3
+            </p>
+        </div>
+        <div class="caja">
+            <p class="">
+            caja4 
+            </p>
+            
+            <p class="">usando 'class'</p>
+        </div>
+        <div class="caja">
+            <p class="">
+            caja5
+            </p>
+        </div>
+         <div class="caja">
+            <p class="">
+            caja6
+            </p>
+        </div>
+    </section>
+
+     <!-- limpiar los flotados -->
+    <div class="clearfix"></div>
+    
+
+    <h2 class="">Bloque #2 de cajas </h2>
+        <section class="cajas-bloque2">
+        <p class="">section | max-width: 850px</p>
+        
+        <div class="caja-blk2">
+            <p class="">
+            caja1
+            </p>
+        </div>
+        <div class="caja-blk2">
+            <p class="">
+            caja2 
+            </p>
+            
+            <p class="">usando 'class'</p>
+        </div>
+        <div class="caja-blk2">
+            <p class="">
+            caja3
+            </p>
+        </div>
+         <div class="caja-blk2">
+            <p class="">
+            caja4
+            </p>
+        </div>
+         
+        <div class="caja-blk2">
+            <p class="">
+            caja5
+            </p>
+        </div>
+        <div class="caja-blk2">
+            <p class="">
+            caja6
+            </p>
+            
+            <p class="">class</p>
+        </div>
+        <div class="caja-blk2">
+            <p class="">
+            caja7
+            </p>
+        </div>
+         <div class="caja-blk2">
+            <p class="">
+            caja8
+            </p>
+        </div>
+          <div class="caja-blk2">
+            <p class="">
+            caja9
+            </p>
+        </div>
+
+    </section>
+
+    <!-- limpiar los flotados -->
+    <div class="clearfix"></div>
+    
+
+
+        <!-- elementos no flotados -->
+    <h2 class="">Contenido despues de las cajas // Elementos no flotados </h2>
+    <p class="">
+        Lorem ipsum dolor sit amet consectetur
+    </p>
+
+
+    
+</body>
+</html>

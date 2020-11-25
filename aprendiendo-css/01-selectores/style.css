@@ -1,0 +1,113 @@
+/* SELECTORES */
+
+/* universal  */
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* selector de etiquetas */
+h1 {
+    background: aquamarine;
+    color: white;
+    padding: 10px;
+
+}
+ul {
+    padding: 10px;
+}
+
+a {
+    font-size: 18px;
+    color: green;
+    text-decoration: none;
+}
+
+footer a {
+    color: red;
+}
+
+/* selector de id */
+#descripcion,
+#titulo {
+    border: 1px solid black;
+    padding: 15px;
+}
+
+#titulo {
+    background: blue;
+    border: 2px dashed;
+}
+
+/* sekectir de clases */
+.parrafo {
+    font-style: italic;
+    /* text-decoration: underline; */
+    font-weight: bold;
+    padding: 10px;
+}
+.parrafo1, parrafo3 {
+    background-color: green;
+    color: white;
+
+}
+.parrafo3 {
+    background-color: orange;
+    color: black;
+}
+
+
+/* selector de atributo */
+
+#usuario form {
+    border: 5px solid cyan;
+    margin-top: 15px;
+    margin-bottom: 16px;
+    padding: 20px;
+}
+#usuario form * {
+    display: block;
+}
+
+input[type="text"] {
+    margin-bottom: 15px;
+    padding: 5px;
+    width: 300px;
+}
+input[type="submit"] {
+    background: green;
+    color:white;
+    padding: 15px;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 15px;
+    cursor: pointer;
+    border: 1px solid grey;
+}
+
+/* selector de hijo */
+
+#nav > ul > li > a {
+    color: red;
+    font-size: 18px;
+    text-decoration: none;
+
+}
+
+#menu > li  > a {
+    color: blue;
+}
+
+/* prioridad de CSS   -- ESPECIFICIDAD 
+/* Cuanto màs especifica es la seleccion/REGLA, mas aplica/PREDOMINA 
+la prioridad de la seleccion */
+
+
+h1 { 
+    background: purple;
+}
+
+#saludo h1 {
+    background: brown !important;
+}

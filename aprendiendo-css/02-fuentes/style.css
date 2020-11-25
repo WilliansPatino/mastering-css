@@ -1,0 +1,65 @@
+@font-face {
+    font-family: DMSerifCuston;
+    src: url(fonts/DM_Serif_Text/DMSerifText-Regular.ttf)
+}
+@font-face {
+    font-family: XanhMonoCustom;
+    src: url(fonts/Xanh_Mono/XanhMono-Regular.ttf)
+}
+@font-face {
+    font-family: CharmCustom;
+    src: url(fonts/Charm/Charm-Regular.ttf);
+}
+
+* {
+    /* background: brown; */
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-family: 'Lobster', cursive;
+
+    /* ********  colores /*
+    /* colores del sistemas */
+    color: #ce28a5;
+
+    /* colores hexadecimales */
+    color: #ce28a5;
+    /* colores rgba */
+
+
+}
+
+h3 {
+    font-family: DMSerifCuston, sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+
+    /* colores rgb */
+    background-color: rgb(69, 106, 167);
+   
+}
+
+p  {
+    font-family: XanhMonoCustom, sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+
+}
+    
+blockquote {
+    font-family: CharmCustom, 'Lucida Sans', 'Lucida Sans Regular';
+    font-size: 25px;
+    /* color de sistema */
+    color:#4b21bf;;
+}
+footer {
+
+    /* colores RGBA */
+    background-color: rgba(69, 127, 168, 0.3);
+    display: block;
+    padding: 20px;
+    text-align: center;
+
+}

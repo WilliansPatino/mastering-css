@@ -1,0 +1,210 @@
+/*  Ejercicio completo:
+
+1- Crear un HTML y vincular con CSS
+2- crear una estructura HTML, que maneje un contenedor
+    general, cabecera, menu, barra lateral, seccion de contenido 
+    principal, elemento dentro de ese contenido principal y 
+    footer.
+3. Todo el contenido debe estar dentro del contenedor general
+    y su ancho sera de 1200px y estar centrado.
+4. El Header debe ocupar el 100% del ancho y tener un texto
+    grande centrado.
+5. El Menu debe tener los elementos uno al lado del otro
+6. El contenido principal debe tener un ancho de 70%
+7. El contenido dentro del conteneder principal debe ser
+    una cuadricula con 4 lineas de 2 cajas.
+8. La barra lateral debe tener un ancho del 30%
+9. El footer debe tener un ancho del 100% de la caja que
+    lo contiene y estar abajo de todo 
+
+*/
+
+* {
+    text-decoration: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.contenedor {
+    width: 1200px;
+    border: 1px solid #cccccc;
+    margin: 0px auto;
+    margin-top: 20px;
+}
+
+#header {
+    width: 100%;
+    height: 100px;
+    background-color: #42c765;
+    color: white;
+    text-align: center;
+    line-height: 90px;
+}
+
+#menu {
+    color: red;
+}
+
+#menu  ul  li {
+    display: block;
+    float: left;
+    padding: 10px;
+    margin: 10px;
+    /* background-color: #eeeeee; */
+    color: white;
+    border-right: 1px solid #cccccc;
+}
+
+#menu ul li a {
+    color: #444444;
+    display: block;
+}
+
+#menu ul li a:hover {
+    color: rgb(253, 253, 253);
+    display: block;
+    transition: 300ms all;
+    /* background-color: rgb(7, 135, 220); */
+
+}
+#menu ul li:hover {
+    background-color: burlywood;
+    font-weight: 900;
+    transition: 300ms all;
+    text-transform: uppercase;
+}
+
+.clearfix {
+    float: none;
+    clear: both;
+}
+
+#content {
+    width: 65%;
+    /* border: 1px solid blue; */
+    float: left;
+    background-color: rgba(192, 89, 183, 0.467);
+    margin: 10px 30px 10px 30px;
+ /*    margin-left: 40px;
+    margin: 20px;
+    margin-bottom: 40px; */
+}
+
+#lateral {
+    width: 28%;
+    border: 1px solid blue;
+    float: left;
+    margin-left: 5px;
+    margin-top: 10px;
+    padding: 5px;
+    /* tamaño principal para acomodar el contenido */
+    min-height: 300px;
+    max-height: 450px;
+    /* manejo del contenido con scroll  */
+    overflow-y: scroll;
+}
+
+.caja {
+
+    width: 40%;
+    height: 250px;
+    background-color: crimson;
+    border: 5px solid rgb(238, 248, 238);
+    float: left;
+    margin: 12px;
+    margin-left: 40px;
+    box-shadow: 2px 2px 5px #444444;
+}
+.caja:last-child  {
+    margin-bottom: 40px;
+}
+
+/**  resalta la caja al pasar el cursorr */
+.caja:hover {
+    /* background-color: rgba(243, 65, 103, 0.741); */
+    box-shadow: 2px 2px 25px #444444;
+}
+.caja:last-child:hover  {
+    margin-bottom: 40px;
+    box-shadow: 2px 2px 15px #444444 inset;
+}
+
+#content .caja {
+    text-align: center;
+    line-height: 20px;
+}
+
+#content h2 {
+    text-align: center;
+    padding: 10px;
+    text-shadow: 2px 2px 5px #444444;
+}
+
+footer {
+    width: 100%;
+    background-color: #444444;
+    color: white;
+    height: 140px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 18px;
+
+}
+
+.border-redondeado {
+    border-radius: 10px;
+}
+.border-ne-sw {
+    border-radius: 50px 10px 50px 10px;
+}
+.border-nw-se {
+    border-radius: 10px 50px 10px 50px;
+}
+.border-round {
+    border-radius: 50px;
+}
+.resaltado {
+    display: block;
+    margin: 15px;
+    background-color: rgb(43, 206, 198);
+}
+.simple {
+    font-size: 16px;
+    font-weight: lighter;
+
+}
+
+.libre {
+    position: absolute;
+    top: 250px;
+    left: 5%;
+    border: 2px solid black;
+    background-color: blue;
+    color: white;
+    width: 50px;
+    height: 50px;
+    font-size: 14px;
+    z-index: 2;
+}
+.libre2 {
+    background-color: yellow;
+    top: 280px;
+    left: 3%;
+    color: black;
+    /* especifica el orden de apilado de un elemento respecto a otro */
+    z-index: 3;
+}
+.fija {
+    /* ideal para la botonera de redes sociales 
+    o para ir al principio */
+    position: fixed;
+    top: 150px;
+    left: 0px;
+    border: 2px solid black;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    width: 50px;
+    height: 50px;
+    font-size: 10px;
+
+}

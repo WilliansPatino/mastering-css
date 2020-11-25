@@ -1,0 +1,246 @@
+* {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+/* animaciones */
+#caja1  {
+    width: 200px;
+    height: 200px;
+    /* background-color: rgba(10, 130, 243, 0.412); */
+    color: white;
+    border: 5px solid blue;
+    font-size: 20px;
+    line-height: 200px;
+    text-align: center;
+    background-image: url('img/iconfinder_plane_452383.png');
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* parametrizacin de la animacion */
+    animation-name: desplazamiento1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes desplazamiento1 {
+    0% {
+        margin-left: 0px;
+   
+    }
+
+    50% {
+        margin-left: 1200px;
+    }
+    80%{
+
+    }
+    100%{
+        margin-left: 0px;
+
+    }
+}
+
+@keyframes desplazamiento2 {
+    0% {
+        margin-left: 0px;
+        transform: rotate(0deg);
+    }
+    50% {
+        margin-left: 1200px;
+        transform: rotate(360deg);
+        
+    }
+    100%{
+        margin-left: 0px;
+        transform: rotate(0deg);
+    }
+}
+@keyframes desplazamiento3 {
+    0% {
+        margin-left: 0px;
+        transform: rotate(0deg);
+    }
+    25% {
+        border: 2px dotted black
+    }
+    50% {
+        margin-left: 1200px;
+        border-radius: 999px;
+        transform: rotate(360deg);
+    }
+    55% {
+        border: 2px dotted black
+    }
+    75%{
+        background-color: crimson;
+
+    }
+    100%{
+        margin-left: 0px;
+        transform: rotate(0deg);
+    }
+}
+#caja2  {
+    width: 200px;
+    height: 200px;
+    background-color: rgba(10, 130, 243, 0.412);
+    color: white;
+    border: 5px solid blue;
+    font-size: 20px;
+    line-height: 200px;
+    text-align: center;
+    background-image: url('img/iconfinder_airplane_1120625.png');
+    background-size: 160px;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* parametrizacin de la animacion */
+    animation-name: desplazamiento2;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#caja3  {
+    width: 200px;
+    height: 200px;
+    background-color: rgba(10, 130, 243, 0.412);
+    color: white;
+    border: 5px solid blue;
+    font-size: 20px;
+    line-height: 200px;
+    text-align: center;
+    background-image: url('img/iconfinder_airplane_1120625.png');
+    background-size: 80px;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* parametrizacin de la animacion */
+    animation-name: desplazamiento3;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+/* end animaciones 
+
+/* transiciones   */
+#boton {
+    display: block;
+    padding: 20px;
+    background-color: green;
+    color: white;
+    /* width: 90px; */
+    text-align: center;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 5px solid rgb(7, 6, 65);
+    transition: border 500ms, background 3s, border-radius 1s;
+}
+#boton:hover {
+    border-radius: 10px;
+    background-color: rgb(184, 135, 44);
+    border: 5px solid red;
+}
+
+
+/* end transiciones */
+
+.contenedor {
+    width: 1200px;
+    height: 600px;
+    /* border: 3px solid orange; */
+}
+.header {
+    width: 100%;
+    /* border: 3px solid blue; */
+    margin: 0px auto;
+    height: 100px;
+
+}
+
+.menu {
+
+
+    background-color: khaki;
+
+ 
+   
+}
+.menu ul  li  {
+    display: block;
+    float: left;
+    margin: 5px;
+    /* border-right: .5px solid gray; */
+    padding: 10px;
+
+    
+}
+
+
+.clearfix {
+    float: none;
+    clear: both;
+}
+
+.formulario {
+    margin: 30px;
+}
+
+/* Pseudo clases */
+ul li:first-child { /* Primera opcion del menu */
+    font-weight: 900;
+    color: purple;
+}
+ul li:nth-child(3){ 
+    /* 3ra opcion sugerida del menu */
+    color: red;
+    font-weight: bold;
+    background-color: khaki;
+    /* box-shadow: 5px 5px 5px rgba(233, 101, 13, 0.926); */
+}
+ul li:nth-child(3):hover { 
+    /* 3ra opcion sugerida del menu */
+    /* box-shadow: 5px 5px 5px rgba(233, 101, 13, 0.926); */
+}
+/* transiciones */
+ul li:nth-child(3):hover {  
+    /* 3ra opcion sugerida del menu */
+    border: 5px solid rgb(7, 6, 65);
+    box-shadow: 5px 5px 5px rgba(233, 101, 13, 0.926);
+    transition: border  1s;
+}
+
+ul li {
+    font-size: 20px;
+}
+.menu ul li:hover {
+    /* background-color: khaki; */
+    /* box-shadow: 5px 5px 5px rgba(211, 208, 208, 0.542);
+    box-shadow: 5px 5px 5px rgba(233, 101, 13, 0.371); */
+}
+ul li:last-child{ 
+    /* ultima opcion sugerida del menu */
+    color: blue;
+}
+.mi-enlace:link { /* aun no visitado */
+    color: green;
+
+    /* background-color: red; */
+}
+.mi-enlace:visited {
+    /* enlace visitado */
+    color: rgb(255, 0, 0);
+    background-image:  url('img/check-1-icon.png')
+}
+.mi-enlace:active {
+    color: green;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+input[type="text"] {
+    padding:10px;    
+}
+/* resaltar el area de entrada de un formulario */
+input[type="text"]:focus {
+    border: 2px solid rgb(0, 255, 51);
+    background-color: rgba(143, 192, 194, 0.207);
+}

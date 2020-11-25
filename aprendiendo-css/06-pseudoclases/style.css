@@ -1,0 +1,100 @@
+* {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+
+.contenedor {
+    width: 800px;
+    height: 600px;
+    border: 3px solid orange;
+}
+.header {
+    width: 100%;
+    border: 3px solid blue;
+    margin: 0px auto;
+    height: 100px;
+
+}
+
+.menu {
+
+
+    background-color: khaki;
+
+ 
+   
+}
+.menu ul  li  {
+    display: block;
+    float: left;
+    margin: 5px;
+    /* border-right: .5px solid gray; */
+    padding: 10px;
+
+    
+}
+
+
+.clearfix {
+    float: none;
+    clear: both;
+}
+
+.formulario {
+    margin: 30px;
+}
+
+/* Pseudo clases */
+ul li:first-child { /* Primera opcion del menu */
+    font-weight: 900;
+    color: purple;
+}
+ul li:nth-child(3){ 
+    /* 3ra opcion sugerida del menu */
+    color: red;
+    font-weight: bold;
+    background-color: khaki;
+    box-shadow: 5px 5px 5px rgba(233, 101, 13, 0.926);
+}
+ul li:nth-child(3):hover { 
+    /* 3ra opcion sugerida del menu */
+    box-shadow: 5px 5px 5px rgba(233, 101, 13, 0.926);
+}
+
+ul li {
+    font-size: 20px;
+}
+.menu ul li:hover {
+    background-color: khaki;
+    box-shadow: 5px 5px 5px rgba(211, 208, 208, 0.542);
+    box-shadow: 5px 5px 5px rgba(233, 101, 13, 0.371);
+}
+ul li:last-child{ 
+    /* ultima opcion sugerida del menu */
+    color: blue;
+}
+.mi-enlace:link { /* aun no visitado */
+    color: green;
+
+    /* background-color: red; */
+}
+.mi-enlace:visited {
+    /* enlace visitado */
+    color: rgb(255, 0, 0);
+    background-image:  url('img/check-1-icon.png')
+}
+.mi-enlace:active {
+    color: green;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+input[type="text"] {
+    padding:10px;    
+}
+/* resaltar el area de entrada de un formulario */
+input[type="text"]:focus {
+    border: 2px solid rgb(0, 255, 51);
+    background-color: rgba(143, 192, 194, 0.207);
+}

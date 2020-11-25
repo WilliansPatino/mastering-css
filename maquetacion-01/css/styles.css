@@ -1,0 +1,292 @@
+/* fuentes */
+@font-face {
+    font-family: "nevis";
+    src: url('../css/fonts/nevis.eot');
+    src: url('../css/fonts/nevis.eot?#iefix') format('embedded-opentype'),
+        url('../css/fonts/nevis.woff') format('woff'),
+        url('../css/fonts/nevis.ttf') format('truetype'),
+        url('../css/fonts/nevis.svg') format('svg'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* estilos generales */
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-image: url('../img/paven.png')
+}
+
+#clearfix {
+    float: none;
+    clear: both;
+}
+
+a {
+    color: #41a911;
+    text-decoration: none;
+}
+a:hover {
+    color: #49bb1c;
+    text-shadow: 0px 0px 1px #49bb1c, 0px 0px 1px #71b053;
+}
+a:visited {
+    color: rgb(26, 77, 26);
+}
+
+/* cabecera */
+#header {
+    min-width: 1024px;
+    width: 100%;
+    height: 250px;
+    margin: 0px auto;
+}
+
+#header a {
+    text-decoration: none;
+}
+
+#header #logotipo {
+    width: 770px;
+    margin: 0px auto;
+    margin-top: 20px;
+}
+
+#header #logotipo img {
+    display: block;
+    text-align: center;
+    margin: 0px auto;
+    width: 110px;
+}
+
+#header h1 {
+    text-align: center;
+    font-size: 40px;
+    color: #71b053;
+    font-family: "nevis";
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: 0px 2px 1px gray;
+    transition: all 300ms;
+}
+
+#header h1:hover  {
+    text-shadow: 0px 2px 1px #333333, 0px 0px 4px #71b053;
+}
+
+#header h1 a {
+    color: #71b053;
+}
+
+/* barra de navegacion */
+#nav {
+    height: 40px;
+    background-color: #333333;
+    width: 100%;
+    color: white;
+    font-family: sans-serif,  Helvetica, Arial;
+    font-size: 14px;
+    box-shadow: 0px 0px 2px gray;
+}
+#nav ul {
+    list-style: none;
+    text-decoration: none;
+    margin: 0px auto;
+    width: 1180px; /* 80% */
+}
+#nav > ul > li {
+    border-right: 1px solid gray;
+    line-height: 40px;
+    float: left;
+    transition: 300ms;
+}
+#nav > ul > li  a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#nav > ul > li  a:first-child {
+    border-left: 1px solid gray;
+}
+#nav > ul > li:hover {
+    background-color: #71e23d;
+    box-shadow: 0px 0px 4px green ;
+    /* 3r parameter -> difuminado */
+}
+/* menu desplegable */
+#nav > ul > li > ul {
+    display: none;
+    position: absolute;
+    color: white;
+    text-align: left;
+    width: 160px;
+    box-shadow: 0px 2px 2px gray;
+    z-index: 1;
+}
+#nav > ul > li:hover > ul {
+    display: block;
+}
+#nav > ul > li:hover > ul > li {
+    background-color: #f2f1f0;
+    border-bottom: 1px solid #d6d6d6;
+    padding: 8px;
+    line-height: 25px;
+    font-size: 13px;
+}
+#nav > ul > li:hover > ul > li a{
+    color: grey;
+}
+#nav > ul > li:hover > ul > li a:hover{
+    color: green;
+    background-color: #71e23d;
+    display: block;
+    /* box-shadow: 0px 2px 2px gray inset; */
+}
+
+/* contenido */
+#content {
+    width: 1250px;
+    min-width: 1100px; /* determina el ancho del scroll */
+    margin: 0px auto;
+}
+
+/* barra lateral */
+#aside, #frase {
+    clear: both;
+    width: 200px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 2px #ccc;
+    background-color: honeydew;
+    margin: 30px;
+    float: left;
+    font-family: sans-serif,  Helvetica, sans-serif;
+}
+#aside .widget {
+    display: block;
+    width: 180px;
+    margin: 5px auto;
+    padding: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+    border-bottom: 1px dashed #333333;
+    margin-bottom: 10px;
+}
+#aside .widget:last-child {
+    margin-bottom: 20px;
+}
+/* titulo de las seccion lateral */
+#aside h3 {
+    display: block;
+    color: #333;
+    width: 100%;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background-color: #d8ddd893;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 15px;
+}
+
+/* formularios */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    padding: 1px;
+    width: 95%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: gray;
+    background-color: #e2fafa;
+    box-shadow: 0px 0px 2px rgb(206, 242, 241) inset;
+    transition: all 3ms;
+}
+/* focus formulario */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+select:focus { 
+   border: 1px solid #71e23d;
+   color: black;
+}
+/* boton */
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+button, btn, btn-login {
+    background-color: #71e23d;
+    display: block;
+    width: 70px;
+    padding: 3px;
+    margin: 10px;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid grey;
+    font-weight: bold;
+    cursor: pointer;
+}
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+button:hover, 
+btn-login:hover {
+    box-shadow: 0px 2px 5px rgb(162, 152, 152);
+}
+/* al hacer clik */
+input[type="button"]:active,
+input[type="submit"]:active,
+input[type="reset"]:active,
+button:active, 
+btn-login:active {
+    box-shadow: 0px 2px 5px rgb(162, 152, 152) inset;
+    /* color: rgb(12, 208, 12); */
+    background-color: #41a911;
+}
+
+/* formularios barra lateral */
+#aside div label,
+#aside div input[type="text"],
+#aside div input[type="email"],
+#aside div input[type="password"],
+#aside div a {
+    display: block;
+    width: 95%;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+#aside div input[type="submit"],
+#aside div input[type="button"],
+#aside div button{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+#aside input,
+#aside label {
+    margin: 0px auto; /* centrado general en la barra lateral; formulario */
+    text-align: center;
+}
+#aside li {
+    margin-top: 8px;
+    list-style: square;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+#frase {
+    /* padding: 10px; */
+    font-size: 14px;
+    font-family: sans-serif;
+}
+.red-title {
+    color: #9b2422 !important;
+}
+.blue-title {
+    color: #0c73f2 !important;
+}
