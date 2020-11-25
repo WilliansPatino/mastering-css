@@ -71,7 +71,7 @@ Aprende CSS3, Maquetación web, Responsive Web Design, SASS, LESS, Flexbox, CSS 
 * Proyecto Web Completo: Continuación de la maquetación 
 	- Secciones/Artículos: 
 		- contenido, stickers, iconos 
-		- Uso de la fuenta 'Web simbols'
+		- Uso de la fuente 'Web simbols'
 		  - https://www.fontsquirrel.com/
 		    - https://www.fontsquirrel.com/fonts/web-symbols?q%5Bterm%5D=symbols&q%5Bsearch_check%5D=Y
 		    > Útil: cada letra tiene un logotipo o simbolo (svg) sin perder calidad.
@@ -80,3 +80,6 @@ Aprende CSS3, Maquetación web, Responsive Web Design, SASS, LESS, Flexbox, CSS 
 
 
 * Dia 1: Introducción HTML: Ejemplo de creación de una página web.
+
+
+### Sección 16:  Introducción al Responsive Web Design
