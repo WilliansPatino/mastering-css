@@ -71,14 +71,15 @@ Aprende CSS3, Maquetación web, Responsive Web Design, SASS, LESS, Flexbox, CSS 
 ## 25.10.2020, Dia 4: 
 
 ### Proyecto Web Completo HTML5 & CCS3: Continuación de la maquetación 
-- Secciones/Artículos: 
-		- contenido, stickers, iconos 
-		- Uso de la fuente 'Web simbols'
-		  - https://www.fontsquirrel.com/
-		    - https://www.fontsquirrel.com/fonts/web-symbols?q%5Bterm%5D=symbols&q%5Bsearch_check%5D=Y
+- Secciones/Artículos:
+  - contenido, stickers, iconos 
+  - Uso de la fuente 'Web simbols'
+  - https://www.fontsquirrel.com/
+  - https://www.fontsquirrel.com/fonts/web-symbols?q%5Bterm%5D=symbols&q%5Bsearch_check%5D=Y
 		    > Útil: cada letra tiene un logotipo o simbolo (svg) sin perder calidad.
 		    > Buscar en Glyphs: letra que asocia el icono.
-	- Culminación del proyecto: Footer
+  - Culminación del proyecto: 
+    - Footer
 
 
 
