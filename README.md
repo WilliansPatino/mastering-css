@@ -5,7 +5,7 @@ Aprende CSS3, Maquetación web, Responsive Web Design, SASS, LESS, Flexbox, CSS 
 ## Bitácora del curso
 
 ### Dia 1: 22.10.2020,		
-* HTML5: Introducción 
+ HTML5: Introducción 
 	- Creación de una página web simple.
 * Primeros pasos con CSS
 - Selectores, Fuentes, colores
@@ -32,7 +32,7 @@ Aprende CSS3, Maquetación web, Responsive Web Design, SASS, LESS, Flexbox, CSS 
 * Fondos 
   - Usar imagenes de fondos y patrones
 
-## Dia 2: 23.10.2020
+### Dia 2: 23.10.2020
 ### Modelo de cajas y posicionamiento de elementos
 
 - Margenes, padding, bordes
@@ -59,8 +59,8 @@ Aprende CSS3, Maquetación web, Responsive Web Design, SASS, LESS, Flexbox, CSS 
 * Animaciones
 
 ### Proyecto Web Completo: HTML5 y CSS3
-	> Maquetación completa
-  - Maquetación de la cabecera
+	- Maquetación Web
+    - Maquetación de la cabecera
   	- Herramienta recomendada por el profesor:
   	  - Extension firefox: 'Web Developer' 
   	  	> Ayuda a obtener medidas en pixeles de secciones de la página
