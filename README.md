@@ -92,3 +92,5 @@
 - Maquetación con porcentajes
 - Media queries
 - Viewports
+### Proyecto completo con Maquetación avanzada
+- de PSD/PNG a HTML y CCS
