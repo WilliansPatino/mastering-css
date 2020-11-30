@@ -93,4 +93,6 @@
 - Media queries
 - Viewports
 ### Proyecto completo con Maquetación avanzada
-- de PSD/PNG a HTML y CCS
+- desde el diseño PSD/PNG a HTML y CCS
+  - Maquetado por secciones: cabecera, Menú, banner, tarjetas, barra lateral
+  - Estilos CSS para la secciones
