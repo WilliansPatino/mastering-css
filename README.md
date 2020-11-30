@@ -5,7 +5,7 @@
 
 ## Bitácora del curso
 
-### Dia 1: 22.10.2020,		
+### Dia 1: 22.11.2020,		
 ### HTML5: Introducción 
 - Creación de una página web simple.
 * Primeros pasos con CSS
@@ -33,7 +33,7 @@
 * Fondos 
   - Usar imagenes de fondos y patrones
 
-### Dia 2: 23.10.2020
+### Dia 2: 23.11.2020
 ### Modelo de cajas y posicionamiento de elementos
 
 - Margenes, padding, bordes
@@ -53,7 +53,7 @@
   	  - position: fixed
   	    > Ideal: Redes sociales / Enlace rápidos
 
-## Dia 3: 24.10.2020
+## Dia 3: 24.11.2020
 ### Continuación 
 * Pseudoclases en CSS
 * Transicciones
@@ -69,7 +69,7 @@
   	- Barra de navegación: menú, submenues
   	- Barra lateral;  contenido, Formularios
 
-## 25.10.2020, Dia 4: 
+## 25.11.2020, Dia 4: 
 
 ### Proyecto Web Completo HTML5 & CCS3: Continuación de la maquetación 
 - Secciones/Artículos:
@@ -84,6 +84,11 @@
 
 
 
-
-
 ### Sección 16:  Introducción al Responsive Web Design
+
+## 30.11.2020, Dia 5: 
+
+### Responsive Web Design con CSS3
+- Maquetación con porcentajes
+- Media queries
+- Viewports

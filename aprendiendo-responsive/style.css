@@ -1,0 +1,214 @@
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+
+#container {
+    width: 1000px;
+    background-color: tomato;
+    margin: 0px auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    width: 100%;
+    background-color: lightskyblue;
+    color: white;
+    line-height: 150px;
+    text-align: center;
+    height: 150px;
+}
+
+/* desde aca se inicia el diseño el preambulo de porcentajes
+para el responsive */
+aside {
+    width: 25%; /* <-- utilizar % es la clave */
+    background-color: mediumaquamarine;
+    color: midnightblue;
+    line-height: 700px;
+    text-align: center;
+    float:left;
+    min-height: 700px;
+}
+.clearfix {
+    float: none;
+    clear: both;
+}
+
+#articles {
+    width: 75%;
+    min-height: 700px;
+    float: left;
+    background-color: rgb(147, 143, 226);
+}
+
+#articles article {
+    width: 25%;
+    height: 150px;
+    line-height: 150px;
+    background-color: rgb(62, 220, 23);
+    color: white;
+    text-align: center;
+    border: 2px solid wheat;
+    float: left;
+    margin: 15px;
+}
+
+
+footer{
+    background-color: orangered;
+
+}
+
+/* RESPONSIVE */
+/* Desde la anchura 0px hasta la anchura 888px de la pantalla */
+@media (max-width: 888px) {
+    /* aplicar estos con prioridad */
+    #articles article {
+        width: 35%;
+        background-color: red;
+    }
+}
+@media (max-width: 819px) {
+    /* aplicar estos con prioridad */
+    #articles article {
+        width: 68%;
+        background-color: rgb(0, 255, 72);
+    }
+}
+/* Desde la anchura 0px hasta la anchura 640px de la pantalla */
+@media (max-width: 750px) {
+    /* aplicar estos con prioridad */
+    #articles article {
+        width: 60%;
+        background-color: rgb(16, 152, 201);
+    }
+}
+@media (max-width: 690px) {
+    /* aplicar estos con prioridad */
+    #articles article {
+        width: 50%;
+        background-color: rgb(16, 152, 201);
+    }
+}
+@media (max-width: 632px) {
+    /* aplicar estos con prioridad */
+    #articles article {
+        width: 78%;
+        background-color: rgb(16, 152, 201);
+    }
+    aside {
+        float: none;
+        width: 70%;
+        min-height: auto;
+        padding: 19px;
+        line-height: 20px;
+        /* margin: 10px; */
+        
+    }
+    #container {
+        overflow: hidden;
+    }
+    #articles {
+        width: 75%;
+    }
+}
+/* Desde la anchura 0px hasta la anchura 640px de la pantalla */
+@media (max-width: 500px) {
+    /* aplicar estos con prioridad */
+    body {
+        background-color: rgb(237, 240, 54);
+
+    }
+
+        
+}
+
+@media (max-width: 619px) {
+    /* aplicar estos con prioridad */
+    #articles article {
+        width: 75%;
+        background-color: rgb(16, 152, 201);
+    }
+    aside {
+        float: none;
+        width: 60%;
+        min-height: auto;
+        padding: 20px;
+        line-height: 50px;
+        margin: 10px;
+        
+    }
+    #container {
+        overflow: hidden;
+    }
+}
+@media (max-width: 475px) {
+    /* aplicar estos con prioridad */
+    #articles article {
+        width: 50%;
+        background-color: rgb(16, 152, 201);
+    }
+    aside {
+        float: none;
+        width: 37%;
+        min-height: auto;
+        padding: 10px;
+        line-height: 50px;
+        margin: 10px;
+        
+    }
+    #container {
+        overflow: hidden;
+    }
+    #articles {
+        width: 75%;
+    }
+}
+@media (max-width: 375px) {
+    /* aplicar estos con prioridad */
+    #articles article {
+        width: 42%;
+        background-color: rgb(106, 89, 214);
+    }
+    aside {
+        float: none;
+        width: 33%;
+        min-height: auto;
+        /* padding: 10px; */
+        line-height: 50px;
+        /* margin: 10px; */
+        
+    }
+    #container {
+        overflow: hidden;
+    }
+    #articles {
+        width: 80%;
+    }
+}
+
+@media (max-width: 320px) {
+    /* aplicar estos con prioridad */
+    #articles article {
+        width: 42%;
+        background-color: rgb(214, 89, 154);
+    }
+    aside {
+        float: none;
+        width: 28%;
+        min-height: auto;
+        /* padding: 10px; */
+        line-height: 50px;
+        /* margin: 10px; */
+        
+    }
+    #container {
+        overflow: hidden;
+    }
+    #articles {
+        width: 68%;
+    }
+}
