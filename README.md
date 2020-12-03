@@ -96,3 +96,7 @@
 - desde el diseño PSD/PNG a HTML y CCS
   - Maquetado por secciones: cabecera, Menú, banner, tarjetas, barra lateral
   - Estilos CSS para la secciones
+
+## 2.12.2020, Dia 6:
+### Continuación:  Maquetación con CSS
+
