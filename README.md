@@ -100,3 +100,7 @@
 ## 2.12.2020, Dia 6:
 ### Continuación:  Maquetación con CSS
 
+## 3.01.2021, Dia 7
+### Animaciones y transiciones avanzadas
+- Animaciones para el Logo, Banner y las tarjetas
+- Animacion sección Redes sociales y Footer

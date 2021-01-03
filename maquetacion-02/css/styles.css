@@ -61,6 +61,13 @@ body {
     margin-left: 20px;
 }
 
+/* dia 7: animacion/efectos del logo */
+#logo:hover {
+    border-radius: 2px;
+    color: #555555;
+    background-color: #ccc;
+}
+
 #logo h3 {
     font-size: 30px;
     display: block;
@@ -69,6 +76,18 @@ body {
     transition: all 300ms;
     margin-right: 50px;
 }
+/* dia 7: efectos del logo */
+#logo:hover h3{
+    animation: fromRight 500ms linear;
+}
+@keyframes fromRight {
+    from{
+        transform: translateX(200%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
 
 #logo .gear {
     display: block;
@@ -76,6 +95,40 @@ body {
     font-size: 30px;
     margin-left: 20px;
     margin-top: 4px;
+    /* dia 7: animacion del logo */
+    animation-name: rotate-gear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+/* dia 7: animacion del logo */
+@keyframes rotate-gear {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+/* dia 7: animacion/efecto del logo */
+#logo:hover .gear {
+    animation: fromBellow 300ms linear;
+}
+@keyframes fromBellow {
+    0% {
+        transform: translate(0%);
+    }
+    50% {
+        transform: translate(200%);
+    }
+    100%{
+        transform: translate(0%);
+    }
+    /* Nota: la sentencia original es 'translateY'. Por error, he
+    usado 'translate', pero lo he dejado asi porque el efecto 
+    es simpatico */
 }
 
 .gear, .icon {
@@ -118,6 +171,19 @@ body {
     background-image: url('../img/bakbaner.png');
     background-position: -260px -260px;
     margin: 20px auto;
+    /* dia 7: animacion del banner */
+    animation: backBanner 10s linear;
+    overflow: hidden;
+}
+/* dia 7: animacion del banner */
+@keyframes backBanner{
+    0% {
+        background-position: 0px 0px;
+    }
+    100% {
+        background-position: -200px --200px;
+    }
+
 }
 
 #banner h1 {
@@ -130,6 +196,32 @@ body {
     margin: 27px auto;
     font-weight: normal;
     text-shadow: 2px 2px 1px black;
+    /* dia 7: animacion del texto del banner */
+    animation: showText 10s linear;
+  
+}
+ /* dia 7: animacion del texto del banner */
+@keyframes showText{
+    0%{
+        transform: translateX(-600%) scale(5,5);
+        opacity: 1;
+    }
+    50% {
+        transform: translateX(600%) scale(5,5);
+        opacity: 1;
+    }
+    75% {
+        transform: translateX(-600%) scale(5,5);
+        opacity: 0;
+        text-shadow: none;
+        color: transparent;
+    }
+    100%{
+        transform: translateX(0%) scale(1,1);
+        opacity: 1;
+        text-shadow: 2px 2px 1px black;
+        color: white;
+    }
 }
 
 /* tarjetas */
@@ -145,9 +237,16 @@ body {
     margin-top: 40px;
     background-color: white;
     cursor: pointer;
+    /* dia 7: transicion en las tarjetas */
+    transition: all 300ms;
 }
-.card:last-child {
 
+.card:hover{
+    background-color: black;
+}
+
+.card:last-child {
+    margin-right: 0px;
 }
 
 .card .icon {
@@ -158,6 +257,23 @@ body {
     line-height: 130px;
     text-align: center;
     margin: 0px auto;
+    /* dia 7: animacion */
+    transition: all 300ms;
+}
+
+.card:hover .icon {
+    font-size: 70px;
+    color: #37bcf9;
+    /* dia 7: animacion */
+    animation: showIcon 300ms linear;
+}
+@keyframes showIcon{
+    from{
+        transform: translateY(-200%);
+    }
+    to{
+        transform: translateY(0%);
+    }
 }
 
 .card .category {
@@ -167,14 +283,44 @@ body {
     font-sise: 21px;
     font-weight: bold;
     text-align: center;
-    color: #00538c
+    color: #00538c;
+    transition: all 300ms;
 }
+/* dia 7: animacion */
+.card:hover .category{
+   color: white; 
+   /* dia 7: animacion */
+   animation: showCategory 400ms linear;
+}
+@keyframes showCategory{
+    from{
+        transform: translateY(-300%);
+        color: black;
+    }
+    to{
+        transform: translateY(0%);
+        color: white;
+    }
+}
+
 .card .description {
     text-align: center;
     color: #1b87d0;
     font-family: "TrebuchetMS";
     font-size: 15px;
-    
+}
+/* dia 7: animacion */
+.card:hover .description{
+    color: white;
+    animation: showDescription 400ms linear;
+}
+@keyframes showDescription {
+    from {
+        transform: translateX(-300%)
+    }
+    to {
+        transform: translateX(0%)
+    }
 }
 
 /* Barra lateral */
@@ -347,10 +493,37 @@ aside h3:first-child {
     text-decoration: none;
     color: black;
 }
+
 #social {
     height: 190px;
     width: 80%;
 }
+
+/* dia 7: animacion */
+#social .overlay{
+    display: block;
+    height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold ;
+    letter-spacing: 1px;
+    text-shadow: 0px 0px 1px #ccc;
+    border: 3px solid white;
+    box-shadow: 0px 0px 4px #ccc;
+    background: #f4f7fe;
+    position: absolute;
+    padding: 5px;
+    margin-left: 70px;
+    margin-top: -50px;
+    transform: translateX(-80%);
+    opacity: 0;
+    transition: all 400ms;
+}
+/* dia 7: animacion */
+#social div:hover .overlay{
+    opacity: 1;
+    transform: translateX(0%);
+}
+
 
 /* SECCION: Articulos */
 #articles {
@@ -424,7 +597,9 @@ aside h3:first-child {
     margin-top: 60px;
     line-height: 100px;
     text-align: center;
-    font-family: "BebasNeue";
+    /* dia 7: animacion */
+    transition: all 1s;
+
 }
 #blog a {
     display: block; /* convierte la caja, clickable */
@@ -433,6 +608,36 @@ aside h3:first-child {
     letter-spacing: 3px;
     color: #00538c;
     text-decoration: none;
+    transition: all 1s;
+}
+/* dia 7: animaciones */
+#blog:hover{
+    background-color: #333333;
+    border: 10px solid #37bcf9;
+    border-radius: 240px;
+    box-shadow: 0px 0px 10px gray;
+    animation: blink 10s infinite linear;
+}
+#blog:hover a{
+    color: white;
+    text-shadow: 1px 1px 1px black, 1px 2px 1px black;
+}
+@keyframes blink{
+    0%{
+        border: 10px solid #37bcf9;
+    }
+    25%{
+        border: 10px solid green;
+    }
+    50%{
+        border: 10px solid yellow;
+    }
+    75%{
+        border: 10px solid white;
+    }
+    100%{
+        border: 10px solid #37bcf9;
+    }
 }
 
 /* footer */
@@ -483,6 +688,14 @@ aside h3:first-child {
 #footer ul li a {
     display: block;
     height: 40px;
+    /* dia 7: animacion */
+    transition: all 300ms;
+}
+/* dia 7: animacion */
+#footer ul li:hover a {
+    padding-left: 40px ;
+    color: white;
+    width: 100%;
 }
 #footer iframe {
     width: 100%;
