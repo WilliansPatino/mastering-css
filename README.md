@@ -104,3 +104,10 @@
 ### Animaciones y transiciones avanzadas
 - Animaciones para el Logo, Banner y las tarjetas
 - Animacion sección Redes sociales y Footer
+### Responsive Web Design
+- Diseño adaptable en escritorio/tablet
+## 9.01.2021, Dia 8:
+- Diseño adaptable (continuación)
+- Responsive avanzado para tablet/pantallas medianas
+- Responsive para smartphones/pantallas de tamaño reducido
+- Responsive para pantallas muy pequeñas

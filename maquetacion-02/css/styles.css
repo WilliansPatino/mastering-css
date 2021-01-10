@@ -550,7 +550,7 @@ aside h3:first-child {
 }
 
 #articles article {
-    width: 97%;
+    width: 98%;
     height: auto;
     border: 1px solid #ccc;
     margin: 40px auto;
@@ -693,9 +693,9 @@ aside h3:first-child {
 }
 /* dia 7: animacion */
 #footer ul li:hover a {
-    padding-left: 40px ;
-    color: white;
-    width: 100%;
+    padding-left: 50px ;
+    /* color: white; */
+    /* width: 100%; */
 }
 #footer iframe {
     width: 100%;
