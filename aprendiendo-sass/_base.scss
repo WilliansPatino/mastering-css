@@ -1,0 +1,146 @@
+// variables
+$fuente-tipica: sans-serif, Helvetica, Arial;
+$color-fondo: #ccc;
+$color-letra-titulo: red;
+$color-letra-parrafo: blue;
+
+// uso de las variables
+body {
+    background-color: $color-fondo;
+  
+}
+
+h1 {
+    font-family: $fuente-tipica;
+    color: $color-letra-titulo
+}
+p {
+    color: $color-letra-parrafo
+}
+
+// anidacion
+.caja {
+    border: 1px solid black;
+    width: 300px;
+    margin: 0px auto;
+    text-align: center;
+    background-color: blanchedalmond;
+    padding: 10px;
+
+    h1 {
+        color: blue;
+    }
+    p {
+        color: green;
+    }
+    .info {
+        font-size: 10px;
+        
+        .author {
+            font-size: 15px;
+            color: orange;
+        }
+    }
+}
+
+// Mixins 6 Functions
+@mixin crearBordes(){
+    border: 5px solid red;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px black;
+}
+@mixin crearBordesconParam($color, $size, $shadow) {
+    border: $size solid $color;
+    border-radius: $size;
+    box-shadow: 0px 0px $size $shadow;
+}
+
+.caja {
+    @include crearBordes();
+}
+
+.listado {
+    @include crearBordesconParam(blue, 5px, grey);
+}
+// Herencia
+%normal-alert {
+    border: 1px solid gray;
+    background-color: lightblue;
+    color: black;
+    padding: 10px;
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 18px;
+}
+
+.alert {
+    @extend %normal-alert;
+}
+.danger-alert {
+    @extend %normal-alert;
+    color: white;
+ 
+    border: 2px solid black;
+    background-color: red;
+
+}
+.sucess-alert {
+    @extend %normal-alert;
+    color: white;
+
+    border: 2px solid black;
+    background-color: rgb(54, 211, 54);
+}
+
+// Operadores 
+h1 {
+    font-size: 22px + 5px - 2px;
+}
+$caja: 200px;
+$wrap: 900px;
+
+.cajas {
+    width: $wrap;
+    margin: 0px auto;
+}
+
+.caja {
+    float: left;
+    width: $caja / $wrap * 100%;
+    margin: 10px;
+}
+
+
+// Standard
+.clearfix {
+    clear: both;
+}
+
+// Condicionales - If
+$color-fondo: black;
+h1 {
+    @if $color-fondo == #ccc {
+        color: black;
+    } @if $color-fondo == black {
+        color: limegreen;
+    } @else {
+        color: lightblue;
+    }
+}
+
+// bucles
+// for
+$contador: 1;
+
+@for $contador from 1 through 10 {
+
+    .listado ul li:nth-child(#{$contador}) {
+        font-size: $contador * 7px;
+        // color: orange;
+    }
+}
+
+// each
+
+// while

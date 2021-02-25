@@ -111,3 +111,20 @@
 - Responsive avanzado para tablet/pantallas medianas
 - Responsive para smartphones/pantallas de tamaño reducido
 - Responsive para pantallas muy pequeñas
+
+## 25.02.2021, Dia 9:
+- Aprendiendo Sass
+  - Trabajar con Sass usando npm
+    - Instalar Node JS
+      - Descargar instalable para Windows
+      > https://nodejs.org/en/
+      - En Linux
+      > sudo apt install nodejs
+      > sudo apt install npm
+    - Abrir la consola de comando
+      - Linux
+        > sudo npm install -g sass
+      - Windows
+        > npm install -g sass
+    - Compilar el archivo scss y generar el styles.css
+        > sass --watch estilos.scss styles.css
