@@ -128,3 +128,16 @@
         > npm install -g sass
     - Compilar el archivo scss y generar el styles.css
         > sass --watch estilos.scss styles.css
+
+## 7.03.2021, Dia 10:
+- Aprendiendo Less
+  - Usando npm
+    - Instalar npm en Linux
+      > sudo apt install npm
+    - Instalar less
+      > sudo npm install less -g
+    - Compilar el archivo .less y generar el styles.css
+      > lessc estilos.less styles.css
+- Sintaxis de Less
+  - Uso de variables, mixins, operadores, bucles y condicionales.
+  
