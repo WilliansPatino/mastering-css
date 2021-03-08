@@ -138,6 +138,12 @@
       > sudo npm install less -g
     - Compilar el archivo .less y generar el styles.css
       > lessc estilos.less styles.css
-- Sintaxis de Less
-  - Uso de variables, mixins, operadores, bucles y condicionales.
-  
+  - Sintaxis de Less
+    - Uso de variables, mixins, operadores, bucles y condicionales.
+
+- Aprendiendo Flexbox desde cero
+  - Definición de las cajas
+  - Uso de propiedades
+    - display, flex-direction, order
+    - flex-grow, shrink, flex-basic
+    - justify-content, align-self
